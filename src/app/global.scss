@@ -1,10 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+$text-color: #5C5C5C;
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 16px;
+	color: $text-color;
+}
+
+.block {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.outline-red {
+	outline: 1px solid red;
+}
+
+.outline-blue {
+	outline: 1px solid blue;
+}
+
+.outline-black {
+	outline: 1px solid black;
+}
+
+.outline-green {
+	outline: 1px solid green;
 }
