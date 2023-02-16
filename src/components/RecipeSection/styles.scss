@@ -1,0 +1,23 @@
+.feature-recipe {
+    display: flex;
+    justify-content: space-between;
+
+    &__image-container {
+        width: 60%;
+        border: 32px;
+         img {
+            border-radius: 32px;
+         }
+    }
+
+    &__content {
+        width: 30%;
+        
+        h2 {
+            font-size: 3rem;
+            color: #000;
+        }
+
+        p {}
+    }
+}

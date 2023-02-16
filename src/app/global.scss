@@ -1,11 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
 $text-color: #5C5C5C;
+$text-hover: #FF914D;
+$background: #F9F7F3;
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 18px;
+	font-family: 'Inter', sans-serif;
 	color: $text-color;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: $background;
+}
+
+:is(h1, h2, h3) {
+	font-family: 'Lora', serif;
+	font-weight: 600;
+}
+
+h1 {
+	&.homeTitle {
+		font-size: 3.5rem;
+		line-height: 1.2;
+		margin-bottom: 2rem;
+		text-align: center;
+		color: #000;
+	}
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
 }
 
 .block {
@@ -46,4 +80,20 @@ $text-color: #5C5C5C;
 
 .outline-green {
 	outline: 1px solid green;
+}
+
+.container {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.entrance {
+	padding-left: 12rem;
+	padding-right: 12rem;
+	padding-top: 5rem;
+}
+
+.feature-recipe {
+	padding: 5rem 0;
 }

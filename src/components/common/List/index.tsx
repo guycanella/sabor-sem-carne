@@ -2,10 +2,24 @@ import { PropsWithChildren } from 'react'
 
 import './styles.scss'
 
-export const List = ({ children }: PropsWithChildren) => {
-	return <ul className='common-list'>{children}</ul>
+type ListProps = {
+	className?: string
 }
 
-export const ListItem = ({ children }: PropsWithChildren) => {
-	return <li>{children}</li>
+type ListItemProps = {
+	className?: string
+}
+
+export const List = ({
+	children,
+	className = ''
+}: PropsWithChildren<ListProps>) => {
+	return <ul className={`common-list ${className}`}>{children}</ul>
+}
+
+export const ListItem = ({
+	children,
+	className = ''
+}: PropsWithChildren<ListItemProps>) => {
+	return <li className={className}>{children}</li>
 }

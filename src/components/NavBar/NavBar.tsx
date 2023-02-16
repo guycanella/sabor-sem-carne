@@ -3,28 +3,35 @@ import { List, ListItem } from '../common/List'
 import { BsInstagram, BsYoutube, BsPinterest } from 'react-icons/bs'
 
 import './styles.scss'
+import Link from 'next/link'
 
 const NavBar = () => {
 	return (
 		<div className='navbar'>
 			<List>
-				<ListItem>Receitas</ListItem>
-				<ListItem>Sobre</ListItem>
-				<ListItem>Contato</ListItem>
+				<Link href='/' className='rule'>
+					<ListItem>Receitas</ListItem>
+				</Link>
+				<Link href='/' className='rule'>
+					<ListItem>Sobre</ListItem>
+				</Link>
+				<Link href='/' className='rule'>
+					<ListItem>Contato</ListItem>
+				</Link>
 			</List>
 			<List>
-				<ListItem>
-					<a href='#' aria-label='Icone da página do Instagram'>
+				<ListItem className='icon'>
+					<a href='#' target='_blank' aria-label='Icone da página do Instagram'>
 						<BsInstagram />
 					</a>
 				</ListItem>
-				<ListItem>
-					<a href='#' aria-label='Icone da página do Youtube'>
+				<ListItem className='icon'>
+					<a href='#' target='_blank' aria-label='Icone da página do Youtube'>
 						<BsYoutube />
 					</a>
 				</ListItem>
-				<ListItem>
-					<a href='#' aria-label='Icone da página do Pinterest'>
+				<ListItem className='icon'>
+					<a href='#' target='_blank' aria-label='Icone da página do Pinterest'>
 						<BsPinterest />
 					</a>
 				</ListItem>

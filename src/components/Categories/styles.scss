@@ -1,0 +1,17 @@
+.entrance__categories {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        
+        a {
+            text-decoration: none;
+        }
+
+        li.category-item {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            padding: 12px 24px;
+            border-radius: 100vw;
+        }
+    }
+}

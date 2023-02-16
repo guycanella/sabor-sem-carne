@@ -8,8 +8,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 		<html lang='pt-BR'>
 			<head />
 			<body>
-				<Header />
-				{children}
+				<div className='container'>
+					<Header />
+					{children}
+				</div>
 			</body>
 		</html>
 	)

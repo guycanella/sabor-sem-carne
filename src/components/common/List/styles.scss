@@ -1,6 +1,43 @@
+@import '../../../app/global.scss';
+
 .common-list {
     display: flex;
     list-style-type: none;
     gap: 2rem;
     align-items: center;
+
+    a {
+        position: relative;
+        text-decoration: none;
+        padding-bottom: 2px;
+
+        &.rule {
+            li {
+                transition: color 0.3s ease;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $text-hover;
+                transform: scaleX(0);
+                transform-origin: top left;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                li {
+                    color: $text-hover;
+                }
+
+                &::before {
+                    transform: scaleX(100%);
+                }
+            }
+        }
+    }
 }
